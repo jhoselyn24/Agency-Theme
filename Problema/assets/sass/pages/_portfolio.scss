@@ -1,0 +1,39 @@
+.portfolio {
+	background-color: $silver;
+	padding: 150px 0;
+	text-align: center;
+	h2 {
+		@extend style-h2;
+		font-size: 35px;
+	}
+	p {
+		font-style: italic;
+		color: $gray;
+		margin-bottom: 50px;
+	}
+	.box-portfolio {
+		background-color: $white;
+		margin-bottom: 28px;
+		transition: 1s;
+		&:hover {
+			    background: rgba(254, 209, 54, 0.9);
+                width: 100%;
+                height: 100%;
+		}
+		img {
+			width: 100%;
+	    }
+		
+		.text-portfolio {
+			padding: 28px;
+			p{
+				margin-bottom: 0;
+			}
+			h4 {
+			    @extend style-h2;
+			    text-transform: none;
+			    margin: 0;
+		    }
+		}
+	}
+}

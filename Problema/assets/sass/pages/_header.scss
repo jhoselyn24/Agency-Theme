@@ -1,0 +1,65 @@
+.navbar-default {
+    background-color: rgba(53, 52, 52, 0.2);
+    padding: 15px;
+    border:none;
+    .navbar-brand {
+      color: $orange;
+      font-size: 2em;
+      transition: 1s;
+      font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+      &:hover {
+      	color: $white;
+      }
+    }
+    .nav li a {
+      font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      text-transform: uppercase;
+      font-weight: 400;
+      letter-spacing: 1px;
+      color: white;
+      &:hover {
+      	color: $orange;
+      }
+    }
+}
+.hero-img {
+  background-image: url(../../img/header-bg.jpg);
+  height: 650px;
+  background-size: cover;
+  background-position-y: 45%;
+  color: white;
+  text-align: center;
+  h2{
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 35px;
+    margin-bottom: 25px;
+    margin: 23% 0 0;
+  }
+  h1{
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 70px;
+    margin-bottom: 60px;;
+  }
+  a{
+    color: $white;
+    background-color: $orange;
+    border: 1px solid $orange;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 3px;
+    font-size: 16px;
+    padding: 20px 40px;
+    transition: 1s;
+    text-decoration: none;
+    &:hover {
+      border: 1px solid $orange;
+      background-color: transparent;
+      color: $orange;
+      text-decoration: none;
+    }
+  }
+}
