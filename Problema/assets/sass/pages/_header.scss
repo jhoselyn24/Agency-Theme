@@ -1,5 +1,5 @@
 .navbar-default {
-    background-color: rgba(53, 52, 52, 0.2);
+    background-color: rgba(51, 50, 50, 0.2);
     padding: 15px;
     border:none;
     .navbar-brand {
@@ -29,6 +29,7 @@
   background-position-y: 45%;
   color: white;
   text-align: center;
+  background-attachment: scroll;
   h2{
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: italic;
@@ -60,6 +61,38 @@
       background-color: transparent;
       color: $orange;
       text-decoration: none;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .navbar-default .navbar-shrink {
+    background-color: #222222;
+    padding: 10px 0;
+  }
+}
+@media (max-width: 600px) {
+  .navbar-default {
+    background-color: #222222;
+    .navbar-toggle {
+      background-color: $orange;
+      border-color: $orange;
+      transition: 0.5s;
+      .icon-bar {
+        background-color: $black;
+      }
+      &:hover {
+      background-color: transparent;
+      }
+    }
+  }
+  .hero-img {
+    height: 500px;
+    h2 {
+      font-size: 20px;
+      margin-top: 42%;
+    }
+    h1 {
+      font-size: 50px;
     }
   }
 }

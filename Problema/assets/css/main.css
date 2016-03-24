@@ -1,4 +1,4 @@
-style-h2, .services h2, .services .box-icon h4, .portfolio h2, .portfolio .box-portfolio .text-portfolio h4, .team h2, .team .box-team h4, .contact h2 {
+style-h2, .services h2, .services .box-icon h4, .portfolio h2, .portfolio .box-portfolio .text-portfolio h4, .about h2, .team h2, .team .box-team h4, .contact h2 {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700; }
@@ -8,7 +8,7 @@ body {
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 .navbar-default {
-  background-color: rgba(53, 52, 52, 0.2);
+  background-color: rgba(51, 50, 50, 0.2);
   padding: 15px;
   border: none; }
   .navbar-default .navbar-brand {
@@ -33,7 +33,8 @@ body {
   background-size: cover;
   background-position-y: 45%;
   color: white;
-  text-align: center; }
+  text-align: center;
+  background-attachment: scroll; }
   .hero-img h2 {
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: italic;
@@ -64,6 +65,29 @@ body {
       color: #fed136;
       text-decoration: none; }
 
+@media (max-width: 768px) {
+  .navbar-default .navbar-shrink {
+    background-color: #222222;
+    padding: 10px 0; } }
+@media (max-width: 600px) {
+  .navbar-default {
+    background-color: #222222; }
+    .navbar-default .navbar-toggle {
+      background-color: #fed136;
+      border-color: #fed136;
+      transition: 0.5s; }
+      .navbar-default .navbar-toggle .icon-bar {
+        background-color: black; }
+      .navbar-default .navbar-toggle:hover {
+        background-color: transparent; }
+
+  .hero-img {
+    height: 500px; }
+    .hero-img h2 {
+      font-size: 20px;
+      margin-top: 42%; }
+    .hero-img h1 {
+      font-size: 50px; } }
 .services {
   text-align: center;
   padding: 150px 0; }
@@ -92,6 +116,9 @@ body {
     font-size: 13px;
     line-height: 1.75; }
 
+@media (max-width: 600px) {
+  .services {
+    padding: 100px 0; } }
 .portfolio {
   background-color: #F7F7F7;
   padding: 150px 0;
@@ -119,6 +146,127 @@ body {
       .portfolio .box-portfolio .text-portfolio h4 {
         text-transform: none;
         margin: 0; }
+
+@media (max-width: 600px) {
+  .portfolio {
+    padding: 100px 0; } }
+.about {
+  text-align: center;
+  padding: 150px 0; }
+  .about h2 {
+    font-size: 35px; }
+  .about p {
+    font-style: italic;
+    color: #777777;
+    margin-bottom: 50px; }
+  .about .timeline {
+    list-style: none;
+    padding: 0;
+    position: relative; }
+    .about .timeline:before {
+      top: 0;
+      bottom: 0;
+      position: absolute;
+      content: "";
+      width: 2px;
+      background-color: #f1f1f1;
+      left: 40px;
+      margin-left: -1.5px; }
+    .about .timeline .timeline-image {
+      left: 0;
+      margin-left: 0;
+      width: 80px;
+      height: 80px;
+      position: absolute;
+      z-index: 100;
+      background-color: #fed136;
+      color: white;
+      border-radius: 100%;
+      border: 7px solid #f1f1f1;
+      text-align: center; }
+    .about .timeline .timeline-panel {
+      width: 100%;
+      float: right;
+      padding: 0 20px 0 100px;
+      position: relative;
+      text-align: left; }
+      .about .timeline .timeline-panel .timeline-heading > h4 {
+        margin-top: 0;
+        color: inherit; }
+        .about .timeline .timeline-panel .timeline-heading > h4 .subheading {
+          text-transform: none; }
+      .about .timeline .timeline-panel .timeline-body > p, .about .timeline .timeline-panel .timeline-body > ul {
+        margin-bottom: 0; }
+        .about .timeline .timeline-panel .timeline-body > p .text-muted, .about .timeline .timeline-panel .timeline-body > ul .text-muted {
+          color: #777777;
+          font-size: 14px;
+          line-height: 1.75; }
+
+@media (min-width: 1200px) {
+  .timeline > li {
+    min-height: 170px; }
+
+  .timeline > li .timeline-image {
+    width: 170px;
+    height: 170px;
+    margin-left: -85px; }
+
+  .timeline > li .timeline-panel {
+    padding: 0 20px 20px 100px; }
+
+  .timeline > li .timeline-image h4 {
+    margin-top: 40px; } }
+@media (min-width: 992px) {
+  .timeline > li {
+    min-height: 150px; }
+
+  .timeline > li .timeline-image {
+    width: 150px;
+    height: 150px;
+    margin-left: -75px; }
+
+  .timeline > li .timeline-panel {
+    padding: 0 20px 20px; }
+
+  .timeline > li .timeline-image h4 {
+    font-size: 18px;
+    margin-top: 30px;
+    line-height: 26px; } }
+@media (min-width: 768px) {
+  .timeline > li {
+    margin-bottom: 100px;
+    min-height: 100px; }
+
+  .timeline > li .timeline-image {
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    margin-left: -50px; }
+
+  .timeline > li .timeline-panel {
+    width: 41%;
+    float: left;
+    padding: 0 20px 20px 30px;
+    text-align: right; }
+
+  .timeline > li .timeline-image h4 {
+    font-size: 13px;
+    margin-top: 16px;
+    line-height: 18px; } }
+.timeline > li {
+  margin-bottom: 50px;
+  position: relative;
+  min-height: 50px; }
+
+.timeline > li .timeline-image h4 {
+  font-size: 10px;
+  margin-top: 12px;
+  line-height: 14px; }
+
+h4 {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700; }
 
 .team {
   background-color: #F7F7F7;
@@ -171,6 +319,9 @@ body {
 .clientes img {
   margin: 50px auto; }
 
+@media (max-width: 600px) {
+  .team {
+    padding: 100px 0; } }
 .contact {
   background-color: #222222;
   padding: 150px 0;
@@ -217,6 +368,9 @@ body {
     color: #fed136;
     text-decoration: none; }
 
+@media (max-width: 600px) {
+  .contact {
+    padding: 100px 0; } }
 footer {
   padding: 25px 0;
   text-align: center; }
