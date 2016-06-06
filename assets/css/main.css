@@ -2,19 +2,23 @@ style-h2, .services h2, .services .box-icon h4, .portfolio h2, .portfolio .box-p
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700; }
-
+.navbar.navbar-default.navbar-shrink{
+  background-color: #373332;
+  z-index: 10000000000;
+  }
 body {
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 .navbar-default {
-  background-color: rgba(51, 50, 50, 0.2);
+  background-color: transparent;
   padding: 15px;
-  border: none; }
+  border: none;
+ }
   .navbar-default .navbar-brand {
     color: #fed136;
     font-size: 2em;
-    transition: 1s;
+    transition: 0.4s;
     font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive; }
     .navbar-default .navbar-brand:hover {
       color: white; }
